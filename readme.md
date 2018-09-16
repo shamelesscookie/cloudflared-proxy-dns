@@ -23,7 +23,6 @@ services:
   dns-proxy:
     container_name: dns-proxy
     image: shamelesscookie/cloudflared-proxy-dns
-    network_mode: host
     ports:
       - 53:53/udp
     restart: always

@@ -13,8 +13,8 @@ RUN \
   apt remove -y curl && \
   apt autoremove -y && \
   rm -rf /var/cache/apk/*
-  
-EXPOSE 53
+
+EXPOSE 53/udp
 
 ENV \
   TUNNEL_DNS_ADDRESS=127.0.0.1 \
