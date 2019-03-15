@@ -11,7 +11,7 @@ https://developers.cloudflare.com/1.1.1.1/dns-over-https/cloudflared-proxy/
 $ docker run --rm -it \
   -e TUNNEL_DNS_ADDRESS=0.0.0.0 \
   -e TUNNEL_DNS_PORT=53 \
-  -p 53:53/udp
+  -p 53:53/udp \
   shamelesscookie/cloudflared-proxy-dns
 ```
 
