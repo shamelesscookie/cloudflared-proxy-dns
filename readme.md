@@ -12,7 +12,7 @@ $ docker run --rm -it \
   -e TUNNEL_DNS_ADDRESS=0.0.0.0 \
   -e TUNNEL_DNS_PORT=53 \
   -p 53:53/udp
-  dns
+  shamelesscookie/cloudflared-proxy-dns
 ```
 
 ### docker-compose example
