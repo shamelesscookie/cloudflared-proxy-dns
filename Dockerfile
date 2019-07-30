@@ -3,7 +3,7 @@ FROM ubuntu:18.04
 ENV \
   CLOUDFLARED_URL=https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-linux-amd64.deb \
   CLOUDFLARED_FILENAME=cloudflared-stable-linux-amd64.deb \
-  CLOUDFLARED_SHA256=9012d49e39df4234b4d3220e7a23c206148275ece6afae8d4b3306498c072a29 \
+  CLOUDFLARED_SHA256=c9d61840cbccd3138eb8b86d70a12ebe756f160ca1cbe84107dad56d4f391cb5 \
   DEBIAN_FRONTEND=noninteractive \
   TUNNEL_DNS_ADDRESS=127.0.0.1 \
   TUNNEL_DNS_PORT=53 \
