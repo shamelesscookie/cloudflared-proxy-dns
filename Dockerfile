@@ -10,7 +10,7 @@ ENV \
   TUNNEL_DNS_UPSTREAM=https://1.1.1.1/dns-query
 
 RUN \
-  apt update && apt install -y curl && \
+  apt update && apt upgrade -y && apt install -y curl && \
   curl ${CLOUDFLARED_URL} -o ${CLOUDFLARED_FILENAME} && \
   sha256sum ${CLOUDFLARED_FILENAME} | grep ${CLOUDFLARED_SHA256} && \
   dpkg -i ${CLOUDFLARED_FILENAME} && \
