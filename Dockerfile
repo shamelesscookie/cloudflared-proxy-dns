@@ -1,9 +1,9 @@
-FROM ubuntu:21.04
+FROM --platform=amd64 ubuntu:21.04
 
 ENV \
   CLOUDFLARED_URL=https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-linux-amd64.deb \
   CLOUDFLARED_FILENAME=cloudflared-stable-linux-amd64.deb \
-  CLOUDFLARED_SHA256=bf6b002a4cb3a978eb117072ab25fafd3ae0b35f34d6712f67c83009e574c9d7 \
+  CLOUDFLARED_SHA256=006be6318f550a03f13b336f663580ca7f2495ec7bcc6398636b90dbdfd5ccbc \
   DEBIAN_FRONTEND=noninteractive \
   TUNNEL_DNS_ADDRESS=127.0.0.1 \
   TUNNEL_DNS_PORT=53 \
